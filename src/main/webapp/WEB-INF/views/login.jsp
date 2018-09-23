@@ -17,7 +17,7 @@
 	
 
 <!--  -->
-<link href="<c:url value="./resources/css/style.css" />" rel="stylesheet">
+<link href="<c:url value="./css/style.css" />" rel="stylesheet">
 
 
 
@@ -36,7 +36,7 @@
 			<div class="col-md-auto bluebg border text-white">
 			
 			<div class="img">
-				<img src="../psa/resources/img/logo.png" alt="logo">
+				<img src="../psa/img/logo.png" alt="logo">
 			</div>
 
 				<form id="signupForm" >
@@ -80,7 +80,7 @@
 		</div>
 	</div>
 	
-	<script src="./resources/js/loginValidation.js"></script>
+	<script src="./js/loginValidation.js"></script>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

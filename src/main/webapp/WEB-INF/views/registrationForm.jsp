@@ -20,7 +20,7 @@
 
 
 <link type="text/css" rel="stylesheet"
-	href='<spring:url value="/resources/css/style.css" htmlEscape="true"/>' />
+	href='<spring:url value="/css/style.css" htmlEscape="true"/>' />
 
 
 
@@ -90,7 +90,7 @@
 						<div class="form-group col-md-6">
 							<label for="countryOfOrigin">Country of origin</label>
 							<form:select path="country" id="countryOfOrigin" class="form-control">
-								<form:options  items="${CountryModel}"></form:options>
+								<form:options  items="${CountryModel}" itemLabel="countryName" ></form:options>
 							</form:select>
 						</div>
 						<div class="form-group col-md-6">
@@ -140,7 +140,7 @@
 		</div>
 	</div>
 
-	<script src="./resources/js/registrationFormValidation.js"></script>
+	<script src="./js/registrationFormValidation.js"></script>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

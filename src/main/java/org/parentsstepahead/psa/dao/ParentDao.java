@@ -7,20 +7,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public interface ParentDao {
+import org.parentsstepahead.psa.entity.Country;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-	public List<Parent> getParents();
 
-	public void saveParent(Parent theParent);
+@Repository
+public interface ParentDao extends CrudRepository<Parent, Long> {
 
-	public Parent getParent(int theId);
+	Country findBycountryName(String countryAbb);
 
-	public void deleteParent(int theId);
 
-	public List<Parent> searchParents(String theSearchName);
-	
-	public ArrayList<String> getIncomeOptions();
-
-	public List<Country> getCountry();
-
+	List<Parent> findByFirstNameOrderByLastName(String name);
 }
+

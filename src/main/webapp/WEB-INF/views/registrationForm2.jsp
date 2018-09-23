@@ -17,7 +17,7 @@
 	crossorigin="anonymous">
 
 
-<link type="text/css" rel="stylesheet" href='<spring:url value="/resources/css/style.css" htmlEscape="true"/>' />
+<link type="text/css" rel="stylesheet" href='<spring:url value="/css/style.css" htmlEscape="true"/>' />
 
  
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -135,7 +135,7 @@
 	</div>
 
 	
-	<script src="./resources/js/registrationFormValidation.js"></script>
+	<script src="./js/registrationFormValidation.js"></script>
 	
 
 	<!-- Optional JavaScript -->

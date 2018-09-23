@@ -25,44 +25,57 @@ public class ParentServiceImplementation implements ParentService {
 	@Override
 	@Transactional 
 	public List<Parent> getParents() {
-		return parentDao.getParents();
+		return (List<Parent> ) parentDao.findAll();
 	}
 
 	@Override
 	@Transactional
 	public void saveParent(Parent theParent) {
-		parentDao.saveParent(theParent);
+		parentDao.save(theParent);
 		
 	}
 
 	@Override
 	@Transactional
-	public Parent getParent(int theId) {
-		return parentDao.getParent(theId);
+	public Parent getParent(int theId)
+	{
+		return parentDao.findById(Long.valueOf(theId)).get();
 	}
 
 	@Override
 	@Transactional
 	public void deleteParent(int theId) {
-		parentDao.deleteParent(theId);
+
+
+		this.parentDao.delete(this.parentDao.findById(Long.valueOf(theId)).get());
+
 	}
 
 	@Override
 	@Transactional
 	public List<Parent> searchParents(String theSearchName) {
-		return parentDao.searchParents(theSearchName);
+
+		return this.parentDao.findByFirstNameOrderByLastName(theSearchName);
+
+
 	}
 
 	@Override
 	@Transactional
 	public ArrayList<String> getIncomeOptions() {
-		return parentDao.getIncomeOptions();
+
+		Parent parent = new Parent();
+		ArrayList<String> incomeOptions = parent.getIncomeOptions();
+		return incomeOptions;
+
 	}
 
 	@Override
 	@Transactional
-	public List<Country> getCountry() {
-		return  (List<Country>) this.countryDao.findAll();
+	public List<Country> getCountry()
+	{
+
+		return (List<Country>) this.countryDao.findAllByOrderByCountryName();
 	}
 	
 	

@@ -18,7 +18,7 @@
 
 
 <link type="text/css" rel="stylesheet"
-	href='<spring:url value="/resources/css/style.css" htmlEscape="true"/>' />
+	href='<spring:url value="/css/style.css" htmlEscape="true"/>' />
 
 
 

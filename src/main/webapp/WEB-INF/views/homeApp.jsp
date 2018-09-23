@@ -22,7 +22,7 @@
 	crossorigin="anonymous">
 
 <!--  -->
-<link href="<c:url value="/resources/css/style.css" />" rel="stylesheet">
+<link href="<c:url value="/css/style.css" />" rel="stylesheet">
 
 
 <title>Parents Step Ahead Login page</title>
@@ -45,7 +45,7 @@
 
 						<div class="col">
 							<div class="img">
-								<img src="../psa/resources/img/logo.png" alt="logo">
+								<img src="/img/logo.png" alt="logo">
 							</div>
 						</div>
 
@@ -64,8 +64,8 @@
 						<div class="col col-lg-2"></div>
 
 						<div class="col centerInformation">
-							<h1><a href="/psa/parentsList" class="text-white"><i class="far fa-clipboard"></i></a></h1>
-							<a href="/psa/parentsList" class="text-white">Parent's List</a>
+							<h1><a href="/parentsList" class="text-white"><i class="far fa-clipboard"></i></a></h1>
+							<a href="/parentsList" class="text-white">Parent's List</a>
 						</div>
 						<div class="col"></div>
 					</div>

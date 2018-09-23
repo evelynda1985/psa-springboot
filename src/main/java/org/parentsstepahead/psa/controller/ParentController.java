@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import org.parentsstepahead.psa.dao.ParentDao;
 import org.parentsstepahead.psa.entity.Country;
 import org.parentsstepahead.psa.entity.Parent;
 import org.parentsstepahead.psa.service.ParentService;
@@ -21,10 +22,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class ParentController {
 	
 	@Autowired
-	ParentService parentService;
-	
+	private ParentService parentService;
 
-	
+	@Autowired
+	private ParentDao parentDao;
+
+
+
 	@GetMapping("/parentsList")
 	public String getParentsList(Model theModel) {	
 
